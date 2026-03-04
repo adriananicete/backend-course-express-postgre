@@ -8,10 +8,11 @@
       "preRequest": "",
       "postResponse": ""
     },
-    "method": "GET",
+    "method": "POST",
     "queryParams": [],
     "headers": [],
-    "contentType": "text/plain",
+    "body": "{\n  \"email\": \"roselyn@gmail.com\",\n  \"password\": \"password123\"\n}",
+    "contentType": "application/json",
     "auth": {
       "currentAuthType": "INHERIT",
       "authConfigStore": {}

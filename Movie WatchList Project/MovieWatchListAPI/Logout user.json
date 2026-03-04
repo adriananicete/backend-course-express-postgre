@@ -1,9 +1,9 @@
 {
-  "name": "Register user",
-  "rank": "av",
+  "name": "Logout user",
+  "rank": "ax",
   "request": {
     "type": "http",
-    "url": "{{BaseURL}}/auth/register",
+    "url": "{{BaseURL}}/auth/logout",
     "scripts": {
       "preRequest": "",
       "postResponse": ""
@@ -11,8 +11,8 @@
     "method": "POST",
     "queryParams": [],
     "headers": [],
-    "body": "{\n  \"name\": \"Aaron\",\n  \"email\": \"aaron@gmail.com\",\n  \"password\": \"password123\"\n}",
-    "contentType": "application/json",
+    "body": "",
+    "contentType": "text/plain",
     "auth": {
       "currentAuthType": "INHERIT",
       "authConfigStore": {}
