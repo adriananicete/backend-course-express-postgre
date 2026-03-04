@@ -1,17 +1,16 @@
 {
-  "name": "Test Request",
-  "rank": "auntit17725085710331",
+  "name": "Login user",
+  "rank": "aw",
   "request": {
     "type": "http",
-    "url": "{{BaseURL}}/movies/",
+    "url": "{{BaseURL}}/auth/login",
     "scripts": {
       "preRequest": "",
       "postResponse": ""
     },
-    "method": "DELETE",
+    "method": "GET",
     "queryParams": [],
     "headers": [],
-    "body": "",
     "contentType": "text/plain",
     "auth": {
       "currentAuthType": "INHERIT",
