@@ -1,14 +1,9 @@
 import { PrismaClient } from "@prisma/client";
-import { neon } from "@neondatabase/serverless";
-import { PrismaNeon } from "@prisma/adapter-neon";
+import { PrismaNeonHttp } from "@prisma/adapter-neon";
 
-const sql = neon(process.env.DATABASE_URL);
-const adapter = new PrismaNeon(sql);
+const adapter = new PrismaNeonHttp(process.env.DATABASE_URL);
 
-const prisma = new PrismaClient({
-  adapter,
-  log: process.env.NODE_ENV === "development" ? ["query", "error", "warn"] : ["error"],
-});
+const prisma = new PrismaClient({ adapter });
 
 export const connectDB = async () => {
   try {
