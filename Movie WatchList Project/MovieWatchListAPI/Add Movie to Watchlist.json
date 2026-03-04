@@ -1,0 +1,21 @@
+{
+  "name": "Add Movie to Watchlist",
+  "rank": "ay",
+  "request": {
+    "type": "http",
+    "url": "{{BaseURL}}/watchlist",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [],
+    "body": "{\n  \"movieId\": \"601f9949-ec96-4473-928e-ddc975dcd20f\",\n  \"status\": \"PLANNED\",\n  \"rating\": 8\n}",
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

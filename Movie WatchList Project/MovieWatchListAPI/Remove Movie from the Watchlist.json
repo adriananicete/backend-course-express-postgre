@@ -1,0 +1,30 @@
+{
+  "name": "Remove Movie from the Watchlist",
+  "rank": "az",
+  "request": {
+    "type": "http",
+    "url": "{{BaseURL}}/watchlist",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1772628756220,
+        "key": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVhN2U2MzM2LTE4YWEtNDA3Mi04YTgyLTQ3Yjc3MWM3MDNmNCIsImlhdCI6MTc3MjYyNzY5NywiZXhwIjoxNzczMjMyNDk3fQ.gLMEwzs2ZSiVYfj-jtq73P1Xy6u4xSru4tXPcCjkeBs",
+        "isEnabled": false,
+        "description": "",
+        "dataType": "string"
+      }
+    ],
+    "body": "{\n  \"movieId\": \"601f9949-ec96-4473-928e-ddc975dcd20f\",\n  \"status\": \"PLANNED\",\n  \"rating\": 8\n}",
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

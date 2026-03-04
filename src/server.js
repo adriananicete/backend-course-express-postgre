@@ -8,6 +8,7 @@ const PORT = 5001;
 // Import routes
 import movieRoutes from "./routes/movieRoutes.js";
 import authRouters from "./routes/authRoutes.js";
+import watchlistRoutes from "./routes/watchListRoutes.js";
 
 // Connect to DB
 connectDB();
@@ -19,6 +20,7 @@ app.use(express.urlencoded({extended: true}));
 // API Routes
 app.use("/movies", movieRoutes);
 app.use("/auth", authRouters);
+app.use("/watchlist", watchlistRoutes);
 
 const server = app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
